@@ -1,6 +1,5 @@
 # Import necessary libraries
 import pandas as pd
-import numpy as np
 from Oversampler import Oversampler
 
 # Load and preprocess the training data
@@ -11,9 +10,6 @@ train_df['Description'] = train_df['Description'].astype(str)
 
 train_texts = train_df['Description']
 train_cases = train_df['Case']
-
-# train_texts = np.array(train_texts)
-# train_cases = np.array(train_cases)
 
 
 sampler = Oversampler()
